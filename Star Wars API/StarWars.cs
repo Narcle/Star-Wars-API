@@ -90,8 +90,8 @@ namespace Star_Wars_API
             try
             {
                 AllSpecies spec = await JSONHelper.GetAllSpecies();
-                listBox1.Items.Add("Count: "+spec.speciess.Count().ToString());
-                foreach (var i in spec.speciess)//fails to get, spec. is null?
+                //listBox1.Items.Add("Count: "+spec.speciess.Count().ToString());
+                foreach (var i in spec.results)//fails to get, spec. is null?
                 {
                     ListSpecies(i);
                     listBox1.Items.Add(" ");
