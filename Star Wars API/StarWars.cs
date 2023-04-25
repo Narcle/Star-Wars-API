@@ -79,21 +79,29 @@ namespace Star_Wars_API
             }
             catch
             {
-                Console.WriteLine("Please enter valid People ID number.");
+                listBox1.Items.Clear();
+                listBox1.Items.Add("Please enter valid People ID.");
             }
 
         }
 
         private async void speciesBtn_Click(object sender, EventArgs e)
         {
-            AllSpecies spec = await JSONHelper.GetAllSpecies();
-            
-            //NOT WORKING WHY?!
-            foreach (var i in spec.speciess)
+            try
             {
-                ListSpecies(i);
-                listBox1.Items.Add(" ");
-            }            
+                AllSpecies spec = await JSONHelper.GetAllSpecies();
+                listBox1.Items.Add("Count: "+spec.speciess.Count().ToString());
+                foreach (var i in spec.speciess)//fails to get, spec. is null?
+                {
+                    ListSpecies(i);
+                    listBox1.Items.Add(" ");
+                }
+            }
+            catch
+            {
+                listBox1.Items.Clear();
+                listBox1.Items.Add("Failed to get allspecies.");
+            }           
         }
     }
 }
