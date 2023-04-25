@@ -66,7 +66,8 @@ namespace Star_Wars_API
             }
             catch
             {
-                Console.WriteLine("Please enter valide Planet ID number.");
+                listBox1.Items.Clear();
+                listBox1.Items.Add("Please enter valid Planet ID.");
             }
         }
 
@@ -90,8 +91,9 @@ namespace Star_Wars_API
             try
             {
                 AllSpecies spec = await JSONHelper.GetAllSpecies();
-                //listBox1.Items.Add("Count: "+spec.speciess.Count().ToString());
-                foreach (var i in spec.results)//fails to get, spec. is null?
+
+                //Loops through All Species and Lists it in listBox1
+                foreach (var i in spec.results)//
                 {
                     ListSpecies(i);
                     listBox1.Items.Add(" ");
