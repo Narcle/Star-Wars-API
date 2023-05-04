@@ -28,91 +28,101 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.GetPlanet = new System.Windows.Forms.Button();
-            this.PlanetIDBox = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.GetPeople = new System.Windows.Forms.Button();
-            this.PeopleIDBox = new System.Windows.Forms.TextBox();
-            this.speciesBtn = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            GetPlanet = new Button();
+            PlanetIDBox = new TextBox();
+            listBox1 = new ListBox();
+            GetPeople = new Button();
+            PeopleIDBox = new TextBox();
+            speciesBtn = new Button();
+            listBox2 = new ListBox();
+            SuspendLayout();
             // 
             // GetPlanet
             // 
-            this.GetPlanet.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.GetPlanet.Location = new System.Drawing.Point(12, 33);
-            this.GetPlanet.Name = "GetPlanet";
-            this.GetPlanet.Size = new System.Drawing.Size(132, 46);
-            this.GetPlanet.TabIndex = 0;
-            this.GetPlanet.Text = "Get Planet";
-            this.GetPlanet.UseVisualStyleBackColor = true;
-            this.GetPlanet.Click += new System.EventHandler(this.GetPlanet_Click);
+            GetPlanet.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            GetPlanet.Location = new Point(12, 35);
+            GetPlanet.Name = "GetPlanet";
+            GetPlanet.Size = new Size(132, 48);
+            GetPlanet.TabIndex = 0;
+            GetPlanet.Text = "Get Planet";
+            GetPlanet.UseVisualStyleBackColor = true;
+            GetPlanet.Click += GetPlanet_Click;
             // 
             // PlanetIDBox
             // 
-            this.PlanetIDBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PlanetIDBox.Location = new System.Drawing.Point(150, 41);
-            this.PlanetIDBox.Name = "PlanetIDBox";
-            this.PlanetIDBox.Size = new System.Drawing.Size(105, 32);
-            this.PlanetIDBox.TabIndex = 1;
+            PlanetIDBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            PlanetIDBox.Location = new Point(150, 43);
+            PlanetIDBox.Name = "PlanetIDBox";
+            PlanetIDBox.Size = new Size(105, 34);
+            PlanetIDBox.TabIndex = 1;
             // 
             // listBox1
             // 
-            this.listBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(197, 154);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(377, 284);
-            this.listBox1.TabIndex = 2;
+            listBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 23;
+            listBox1.Location = new Point(12, 182);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(333, 280);
+            listBox1.TabIndex = 2;
             // 
             // GetPeople
             // 
-            this.GetPeople.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.GetPeople.Location = new System.Drawing.Point(282, 33);
-            this.GetPeople.Name = "GetPeople";
-            this.GetPeople.Size = new System.Drawing.Size(132, 46);
-            this.GetPeople.TabIndex = 3;
-            this.GetPeople.Text = "Get People";
-            this.GetPeople.UseVisualStyleBackColor = true;
-            this.GetPeople.Click += new System.EventHandler(this.GetPeople_Click);
+            GetPeople.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            GetPeople.Location = new Point(282, 35);
+            GetPeople.Name = "GetPeople";
+            GetPeople.Size = new Size(132, 48);
+            GetPeople.TabIndex = 3;
+            GetPeople.Text = "Get People";
+            GetPeople.UseVisualStyleBackColor = true;
+            GetPeople.Click += GetPeople_Click;
             // 
             // PeopleIDBox
             // 
-            this.PeopleIDBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PeopleIDBox.Location = new System.Drawing.Point(432, 41);
-            this.PeopleIDBox.Name = "PeopleIDBox";
-            this.PeopleIDBox.Size = new System.Drawing.Size(105, 32);
-            this.PeopleIDBox.TabIndex = 4;
+            PeopleIDBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            PeopleIDBox.Location = new Point(420, 43);
+            PeopleIDBox.Name = "PeopleIDBox";
+            PeopleIDBox.Size = new Size(105, 34);
+            PeopleIDBox.TabIndex = 4;
             // 
             // speciesBtn
             // 
-            this.speciesBtn.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.speciesBtn.Location = new System.Drawing.Point(616, 33);
-            this.speciesBtn.Name = "speciesBtn";
-            this.speciesBtn.Size = new System.Drawing.Size(132, 46);
-            this.speciesBtn.TabIndex = 5;
-            this.speciesBtn.Text = "List All Species";
-            this.speciesBtn.UseCompatibleTextRendering = true;
-            this.speciesBtn.UseVisualStyleBackColor = true;
-            this.speciesBtn.Click += new System.EventHandler(this.speciesBtn_Click);
+            speciesBtn.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            speciesBtn.Location = new Point(616, 35);
+            speciesBtn.Name = "speciesBtn";
+            speciesBtn.Size = new Size(141, 48);
+            speciesBtn.TabIndex = 5;
+            speciesBtn.Text = "List All Species";
+            speciesBtn.UseCompatibleTextRendering = true;
+            speciesBtn.UseVisualStyleBackColor = true;
+            speciesBtn.Click += speciesBtn_Click;
+            // 
+            // listBox2
+            // 
+            listBox2.FormattingEnabled = true;
+            listBox2.ItemHeight = 20;
+            listBox2.Location = new Point(457, 182);
+            listBox2.Name = "listBox2";
+            listBox2.Size = new Size(331, 284);
+            listBox2.TabIndex = 6;
             // 
             // StarWars
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.speciesBtn);
-            this.Controls.Add(this.PeopleIDBox);
-            this.Controls.Add(this.GetPeople);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.PlanetIDBox);
-            this.Controls.Add(this.GetPlanet);
-            this.Name = "StarWars";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 474);
+            Controls.Add(listBox2);
+            Controls.Add(speciesBtn);
+            Controls.Add(PeopleIDBox);
+            Controls.Add(GetPeople);
+            Controls.Add(listBox1);
+            Controls.Add(PlanetIDBox);
+            Controls.Add(GetPlanet);
+            Name = "StarWars";
+            Text = "Star Wars API This & That";
+            Load += Form1_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -123,5 +133,6 @@
         private Button GetPeople;
         private TextBox PeopleIDBox;
         private Button speciesBtn;
+        private ListBox listBox2;
     }
 }

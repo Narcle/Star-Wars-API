@@ -29,6 +29,6 @@ namespace Star_Wars_API
         public int count { get; set; }
         public string next { get; set; }
         public object previous { get; set; }
-        public List<Species> results { get; set; }
+        public List<Species> results { get; set; }//the names must match JSON file
     }
 }

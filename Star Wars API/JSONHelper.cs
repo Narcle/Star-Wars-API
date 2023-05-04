@@ -40,7 +40,7 @@ namespace Star_Wars_API
         public static async Task<People> GetPeople(int PeopleID)
         {
             // Call asynchronous network methods in a try/catch block to handle exceptions.
-            People   myDeserializedClass = new People();
+            People myDeserializedClass = new People();
 
             try
             {
